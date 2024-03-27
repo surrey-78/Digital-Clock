@@ -1,0 +1,68 @@
+body{
+    font-family: "Arial", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('./1302191.jpg');
+    position: relative;
+    background-size: cover;
+
+}
+
+.container{
+    text-align: center;
+}
+
+.clock{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.time{
+    font-size: 6rem;
+    color: rgb(238, 255, 54);
+    text-shadow: 2px 2px 4px rgba(0,0,0,1);
+    display: flex;
+}
+
+.view{
+    font-size: 0.9rem;
+    font-family: sans-serif;
+    color: rgb(238, 255, 54);
+    text-shadow: 1px 1px 2px rgba(0,0,0,1);
+}
+
+.hours,.minutes,.seconds{
+    width: 10rem;
+    margin: 0 10px;
+    color: rgb(238, 255, 54);
+    background-color: rgba(245,245,245,0.3);
+}
+
+.period{
+    padding-top: 100px;
+    font-size: 2rem;
+    font-family: sans-serif;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+@media(max-width : 768px){
+    .time{
+        font-size: 4rem;
+    }
+    .period{
+        font-size: 1.5rem;
+    }
+}
+
+@media(max-width : 480px){
+    .time{
+        font-size: 3rem;
+    }
+    .period{
+        font-size: 1rem;
+    }
+}
